@@ -66,7 +66,7 @@ const App = () => {
       .toJpeg(node ?? new Node(), { quality: 0.95 })
       .then(function (dataUrl: any) {
         var link = document.createElement("a")
-        link.download = "my-image-name.jpeg"
+        link.download = `${label}-plover.jpeg`
         link.href = dataUrl
         link.click()
       })
