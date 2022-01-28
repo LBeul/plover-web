@@ -1,0 +1,57 @@
+.cover-prev {
+  background-color: #202121;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40vw;
+  align-items: center;
+  position: relative;
+}
+
+a {
+  color: #d1efd3;
+}
+
+.credits {
+  font-size: 0.75em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  width: 300px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+.label-text {
+  position: absolute;
+  font-weight: 800;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
+}
+
+#download-btn {
+  width: 300px;
+  height: 40px;
+  background-color: #1db954;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+}
