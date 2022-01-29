@@ -6,7 +6,7 @@ import InputBox from "./components/InputBox"
 import CoverPreview from "./components/CoverPreview"
 import keys from "./keys"
 
-import "./styles/app.css"
+import { RowFlex, ColFlex } from "./components/style/AppStyles"
 
 interface imgSrc {
   urls: {
@@ -60,7 +60,7 @@ const App: FC = () => {
   // Change domtoimage for something better :D
 
   const downloadCoverImage = () => {
-    let node = document.getElementById("labelled-cover")
+    let node = document.getElementById("cover")
     console.log("Download clicked")
     domtoimage
       .toJpeg(node ?? new Node(), { quality: 0.95 })
@@ -73,25 +73,23 @@ const App: FC = () => {
   }
 
   return (
-    <div className="App">
+    <ColFlex>
       <Header />
-      <div className="main-content">
+      <RowFlex>
         <InputBox
           handleCaptionInput={handleCaptionInput}
           handleTopicInput={handleTopicInput}
           handleSubmit={handleSubmit}
         />
         <CoverPreview
-          imageSrc={
-            image ? image.urls.small : "https://via.placeholder.com/300"
-          }
+          imageSrc={image ? image.urls.small : null}
           label={label}
           artist={image ? image.user.username : "Nobody"}
           artistLink={image ? image.user.links.html : "#"}
           onDownloadClick={downloadCoverImage}
         />
-      </div>
-    </div>
+      </RowFlex>
+    </ColFlex>
   )
 }
 

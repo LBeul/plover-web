@@ -1,5 +1,7 @@
-import React, { FC, FormEventHandler } from "react"
-import "../styles/input.css"
+import { FC, FormEventHandler } from "react"
+import ContentBox from "./style/ContentBox"
+import { StyledInput, StyledSubmitBtn } from "./style/FormStyles"
+
 import Description from "./Description"
 
 interface InputBoxProps {
@@ -14,14 +16,18 @@ const InputBox: FC<InputBoxProps> = ({
   handleCaptionInput,
 }) => {
   return (
-    <div className="input-box">
+    <ContentBox>
       <Description />
       <form onSubmit={handleSubmit}>
         {/* Topic input for image search */}
-        <input type="text" placeholder="keyword" onChange={handleTopicInput} />
+        <StyledInput
+          type="text"
+          placeholder="keyword"
+          onChange={handleTopicInput}
+        />
         <br />
         {/* Caption aka name of playlist */}
-        <input
+        <StyledInput
           type="text"
           placeholder="caption"
           maxLength={12}
@@ -29,9 +35,9 @@ const InputBox: FC<InputBoxProps> = ({
         />
         <br />
         {/* Button that triggers the handleClick function given as props */}
-        <input id="submit" type="submit" value="Generate!" />
+        <StyledSubmitBtn type="submit" value="Generate!" />
       </form>
-    </div>
+    </ContentBox>
   )
 }
 

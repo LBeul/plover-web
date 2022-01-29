@@ -1,8 +1,9 @@
 import React, { FC } from "react"
+import { StyledDiv } from "./style/FormStyles"
 
 const Description: FC = () => (
-  <div className="description">
-    <h1 className="description-heading">Welcome to Plover</h1>
+  <StyledDiv>
+    <h1 style={{ textAlign: "center" }}>Welcome to Plover</h1>
     <h3 className="description-heading">PlaylistsCovers made easy</h3>
     Did yo ever create a spotify playlist and thought{" "}
     <em>"Damn, that generically generated cover looks dope as hell" </em>? Yeah,
@@ -12,7 +13,7 @@ const Description: FC = () => (
     </strong>
     . Simply type enter a fitting image caption and your playlist's name - et
     voila: plover creates an awesome cover for you.
-  </div>
+  </StyledDiv>
 )
 
 export default Description

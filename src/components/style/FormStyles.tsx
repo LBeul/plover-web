@@ -1,16 +1,9 @@
-.input-box {
-  background-color: #202121;
-  border-radius: 20px;
-  padding: 20px;
-  display: flex;
-  width: 40vw;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
+import styled from "styled-components"
 
-input {
+export const StyledInput = styled.input`
   height: 30px;
+  width: 300px;
+  align: center;
   background-color: #484948;
   border: 1px solid #1db954;
   color: #fff;
@@ -19,10 +12,13 @@ input {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin-bottom: 8px;
-}
+`
 
-#submit {
-  width: 80%;
+export const StyledSubmitBtn = styled.input`
+  display: block;
+  align: center;
+  width: 200px;
+  padding: 5px;
   height: 40px;
   background-color: #191414;
   border-radius: 10px;
@@ -33,16 +29,10 @@ input {
   font-weight: 400;
   margin: auto;
   margin-top: 20px;
-  display: block;
-}
-
-.description {
+`
+export const StyledDiv = styled.div`
   width: 100%;
   color: #f8f9f8;
   text-align: left;
   margin-bottom: 20px;
-}
-
-.description-heading {
-  text-align: center;
-}
+`

@@ -1,8 +1,9 @@
 import React, { FC } from "react"
-import "../styles/cover.css"
+import ContentBox from "./style/ContentBox"
+import { Cover, DownloadButton, Label, Credits } from "./style/CoverStyles"
 
 interface CoverPreviewProps {
-  imageSrc: string
+  imageSrc: string | null
   artistLink: string
   artist: string
   label: string
@@ -17,22 +18,19 @@ const CoverPreview: FC<CoverPreviewProps> = ({
   onDownloadClick,
 }) => {
   return (
-    <div className="cover-prev">
+    <ContentBox>
       {/* Wrap Picture & Caption into one div */}
-      <div id="labelled-cover">
-        {/* Picture result based on searched topic */}
-        <img src={imageSrc} alt="Your Cover!" />
-        {/* Reference according to unsplash API guidelines */}
-        <div className="label-text">{label}</div>
-      </div>
-      <p className="credits">
+      <Cover imgSrc={imageSrc} id="cover">
+        <Label>{label}</Label>
+      </Cover>
+      <Credits>
         Picture by <a href={artistLink}>{artist}</a> from{" "}
         <a href="https://unsplash.com/">Unsplash</a>
-      </p>
-      <button id="download-btn" onClick={onDownloadClick}>
+      </Credits>
+      <DownloadButton id="download-btn" onClick={onDownloadClick}>
         Download!
-      </button>
-    </div>
+      </DownloadButton>
+    </ContentBox>
   )
 }
 
