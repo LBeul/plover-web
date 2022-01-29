@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC } from "react"
 import "../styles/cover.css"
 
 interface CoverPreviewProps {
@@ -9,13 +9,13 @@ interface CoverPreviewProps {
   onDownloadClick: React.FormEventHandler
 }
 
-function CoverPreview({
+const CoverPreview: FC<CoverPreviewProps> = ({
   imageSrc,
   artistLink,
   artist,
   label,
   onDownloadClick,
-}: CoverPreviewProps) {
+}) => {
   return (
     <div className="cover-prev">
       {/* Wrap Picture & Caption into one div */}

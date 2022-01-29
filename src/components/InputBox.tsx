@@ -1,4 +1,4 @@
-import React, { FormEventHandler } from "react"
+import React, { FC, FormEventHandler } from "react"
 import "../styles/input.css"
 import Description from "./Description"
 
@@ -8,11 +8,11 @@ interface InputBoxProps {
   handleCaptionInput: FormEventHandler
 }
 
-const InputBox = ({
+const InputBox: FC<InputBoxProps> = ({
   handleSubmit,
   handleTopicInput,
   handleCaptionInput,
-}: InputBoxProps) => {
+}) => {
   return (
     <div className="input-box">
       <Description />

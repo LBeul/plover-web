@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { FC, useState } from "react"
 import domtoimage from "dom-to-image"
 
 import Header from "./components/Header"
@@ -20,7 +20,7 @@ interface imgSrc {
   }
 }
 
-const App = () => {
+const App: FC = () => {
   const [topic, setTopic] = useState("")
   const [caption, setCaption] = useState("")
   const [label, setLabel] = useState("")

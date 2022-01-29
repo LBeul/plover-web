@@ -1,7 +1,7 @@
-import React from "react"
+import React, { FC } from "react"
 import "../styles/header.css"
 
-function Header() {
+const Header: FC = () => {
   return <header>Plover</header>
 }
 

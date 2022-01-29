@@ -1,6 +1,6 @@
-import React from "react"
+import React, { FC } from "react"
 
-const Description = () => (
+const Description: FC = () => (
   <div className="description">
     <h1 className="description-heading">Welcome to Plover</h1>
     <h3 className="description-heading">PlaylistsCovers made easy</h3>
