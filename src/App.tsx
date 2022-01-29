@@ -21,10 +21,10 @@ interface imgSrc {
 }
 
 const App: FC = () => {
-  const [topic, setTopic] = useState("")
-  const [caption, setCaption] = useState("")
-  const [label, setLabel] = useState("")
-  const [image, setImage] = useState<imgSrc | null>(null)
+  const [topic, setTopic] = useState<string>("")
+  const [caption, setCaption] = useState<string>("")
+  const [label, setLabel] = useState<string>("")
+  const [image, setImage] = useState<imgSrc | null>()
 
   const handleTopicInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTopic(event.currentTarget.value)
