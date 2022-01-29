@@ -24,6 +24,7 @@ sketch
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+yarn.lock
 
 # if you are NOT using Zero-installs, then:
 # comment the following lines
