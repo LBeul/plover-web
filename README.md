@@ -1,6 +1,8 @@
 # Plover
 
-🚧 _This is App is still in development._ 🚧
+Check out [Plover's live demo](https://plover-web.netlify.app/)
+
+<img src="https://raw.githubusercontent.com/LBeul/plover-web/master/screenshot.png" width="700" alt="Plover">
 
 ## What is this?
 
