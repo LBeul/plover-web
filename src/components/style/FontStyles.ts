@@ -9,15 +9,15 @@ const FontStyles = createGlobalStyle`
   font-family: 'PoppinsBold';
   font-style: bold;
   font-weight: 800;
-  font-display: swap;
-  src: url(${PoppinsBoldWoff}) format('woff');
+  src: url(${PoppinsBoldWoff}) format('woff'),
+       url(${PoppinsBoldWoff2}) format('woff2');
 }
 @font-face {
   font-family: 'PoppinsReg';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: url(${PoppinsRegularWoff}) format('woff');
+  src: url(${PoppinsRegularWoff}) format('woff'),
+      url(${PoppinsRegularWoff2}) format('woff2');
 }
 `
 
