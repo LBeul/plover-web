@@ -19,10 +19,10 @@ export const Label = styled.div`
   vertical-align: middle;
   line-height: 300px;
   width: 100%;
-  font-weight: 800;
   color: #fff;
   font-size: 36px;
-  font-family: "Poppins", sans-serif;
+  font-family: "PoppinsBold", sans-serif;
+  font-weight: 800;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
 `
 
@@ -34,8 +34,8 @@ export const DownloadButton = styled.button`
   border: none;
   color: #fff;
   font-size: 1.5em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "PoppinsBold", sans-serif;
+  font-weight: 800;
   margin: auto;
   margin-top: 20px;
   display: block;
@@ -43,7 +43,7 @@ export const DownloadButton = styled.button`
 
 export const Credits = styled.p`
   font-size: 0.75em;
-  font-family: "Poppins", sans-serif;
+  font-family: "PoppinsReg", sans-serif;
   font-weight: 400;
   color: #fff;
   text-align: center;

@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   text-align: center;
   color: #ffffff;
   font-size: 4.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: "PoppinsBold", sans-serif;
   font-weight: 800;
   margin-bottom: 50px;
 `

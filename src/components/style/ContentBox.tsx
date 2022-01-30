@@ -6,6 +6,7 @@ const ContentBox = styled.div`
   padding: 40px;
   display: flex;
   width: 40vw;
+  margin: 10px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
