@@ -2,7 +2,7 @@
 
 Check out [Plover's live demo](https://plover-web.netlify.app/)
 
-<img src="https://raw.githubusercontent.com/LBeul/plover-web/master/screenshot.png" width="700" alt="Plover">
+<img src="https://raw.githubusercontent.com/LBeul/plover-web/master/screenshot.png" alt="Plover">
 
 ## What is this?
 
