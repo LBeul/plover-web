@@ -39,6 +39,9 @@ export const DownloadButton = styled.button`
   margin: auto;
   margin-top: 20px;
   display: block;
+  @media (max-width: 768px) {
+    width: 250px;
+  }
 `
 
 export const Credits = styled.p`

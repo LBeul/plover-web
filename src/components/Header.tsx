@@ -9,6 +9,9 @@ const StyledHeader = styled.header`
   font-family: "PoppinsBold", sans-serif;
   font-weight: 800;
   margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `
 
 const Header: FC = () => {

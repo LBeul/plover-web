@@ -10,6 +10,12 @@ const ContentBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+    margin-bottom: 2vh;
+  }
 `
 
 export default ContentBox
