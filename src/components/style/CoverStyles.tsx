@@ -7,8 +7,8 @@ interface CoverImage {
 export const Cover = styled.div<CoverImage>`
   width: 300px;
   height: 300px;
-  background-image: url(${props =>
-    props.imgSrc ?? "https://via.placeholder.com/300"});
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(${props => props.imgSrc ?? "https://via.placeholder.com/300"});
 `
 // object-fit: cover;
 // filter: brightness(0.75);
