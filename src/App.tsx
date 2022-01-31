@@ -6,7 +6,7 @@ import InputBox from "./components/InputBox"
 import CoverPreview from "./components/CoverPreview"
 import keys from "./keys"
 
-import { RowFlex, ColFlex } from "./components/style/AppStyles"
+import { RowFlex, ColFlex } from "./style/AppStyles"
 
 interface imgSrc {
   urls: {

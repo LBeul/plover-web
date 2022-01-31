@@ -4,7 +4,18 @@ import PoppinsBoldWoff2 from "./fonts/poppins-800.woff2"
 import PoppinsRegularWoff from "./fonts/poppins-regular.woff"
 import PoppinsRegularWoff2 from "./fonts/poppins-regular.woff2"
 
-const FontStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #191414;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
 @font-face {
   font-family: 'PoppinsBold';
   font-style: bold;
@@ -21,4 +32,4 @@ const FontStyles = createGlobalStyle`
 }
 `
 
-export default FontStyles
+export default GlobalStyle

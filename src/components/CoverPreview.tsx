@@ -1,6 +1,11 @@
 import React, { FC } from "react"
-import ContentBox from "./style/ContentBox"
-import { Cover, DownloadButton, Label, Credits } from "./style/CoverStyles"
+import ContentBox from "../style/componentStyles/ContentBox"
+import {
+  Cover,
+  DownloadButton,
+  Label,
+  Credits,
+} from "../style/componentStyles/CoverStyles"
 
 interface CoverPreviewProps {
   imageSrc: string | null

@@ -1,6 +1,9 @@
 import { FC, FormEventHandler } from "react"
-import ContentBox from "./style/ContentBox"
-import { StyledInput, StyledSubmitBtn } from "./style/FormStyles"
+import ContentBox from "../style/componentStyles/ContentBox"
+import {
+  StyledInput,
+  StyledSubmitBtn,
+} from "../style/componentStyles/FormStyles"
 
 import Description from "./Description"
 

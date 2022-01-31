@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { StyledDiv } from "./style/FormStyles"
+import { StyledDiv } from "../style/componentStyles/FormStyles"
 
 const Description: FC = () => (
   <StyledDiv>
