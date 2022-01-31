@@ -22,14 +22,14 @@ const InputBox: FC<InputBoxProps> = ({
         {/* Topic input for image search */}
         <StyledInput
           type="text"
-          placeholder="keyword"
+          placeholder="image keyword"
           onChange={handleTopicInput}
         />
         <br />
         {/* Caption aka name of playlist */}
         <StyledInput
           type="text"
-          placeholder="caption"
+          placeholder="playlist name"
           maxLength={12}
           onChange={handleCaptionInput}
         />
