@@ -34,7 +34,7 @@ const App: FC = () => {
   }
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    if (topic !== "") {
+    if (topic) {
       fetch(
         `https://api.unsplash.com/search/photos?query=${topic}&orientation=squarish`,
         {
